@@ -22,7 +22,7 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
 names_Df = namesDf.withColumn("epoch",unix_timestamp()).withColumn("meters_to_feet",namesDf.height * 3.281) 
-names_Df.explain()
+display(names_Df.explain())
 
 
 # COMMAND ----------
@@ -149,6 +149,33 @@ else:
   
 ratingsDf = ratingsDf.withColumn("votes_10",ratingsDf.votes_10.cast('long'))
 ratingsDf.printSchema()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC #Zad2
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Jobs -  displays a summary page of all jobs in the Spark application and a details page for each job. 
+# MAGIC The summary page shows high-level information, such as the status, duration, and progress of all jobs and the overall event timeline.
+# MAGIC When you click on a job on the summary page, you see the details page for that job 
+# MAGIC 
+# MAGIC Stages - The Stages tab displays a summary page that shows the current state of all stages of all jobs in the Spark application.
+# MAGIC 
+# MAGIC Storage Tab - The Storage tab displays the persisted RDDs and DataFrames, if any, in the application. The summary page shows the storage levels, sizes and partitions of all RDDs, 
+# MAGIC and the details page shows the sizes and using executors for all partitions in an RDD or DataFrame.
+# MAGIC 
+# MAGIC Environment Tab - The Environment tab displays the values for the different environment and configuration variables, 
+# MAGIC including JVM, Spark, and system properties.
+# MAGIC 
+# MAGIC 
+# MAGIC Executors Tab - The Executors tab displays summary information about the executors that were created for the application, including memory and disk usage and task and shuffle information. 
+# MAGIC The Storage Memory column shows the amount of memory used and reserved for caching data.
+# MAGIC 
+# MAGIC SQL Tab - If the application executes Spark SQL queries, the SQL tab displays information, 
+# MAGIC such as the duration, jobs, and physical and logical plans for the queries
 
 # COMMAND ----------
 
