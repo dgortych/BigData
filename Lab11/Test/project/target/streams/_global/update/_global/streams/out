@@ -1,0 +1,4 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/D:/Studia%20Materiały/Semestr6/BIG_DATA/Test/project/"), "test-build")...
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug] Done updating ProjectRef(uri("file:/D:/Studia%20Materiały/Semestr6/BIG_DATA/Test/project/"), "test-build")
