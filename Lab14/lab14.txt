@@ -1,0 +1,12 @@
+Modelowanie danych to proces analizowania oraz definiowania wszystkich danych zbieranych i tworzonych w firmie, a także relacji między tymi danymi.
+
+Cardinality (Kardynalność) określa częstość występowania danych. Im mniejsza tym więcej powtórzeń w zbiorze
+
+Normalizacja - usunięcie duplikatów, redukcja powtarzających się danych
+
+Denormalizacja - Dodanie nadmiaru danych do tabeli w celu uniknięcia konieczności kosztownych operacji na wielu linkowanych tabelach
+
+Data mart - jest to Data warehouse zorientowany w obrębie jednego specyficznego tematu.
+
+Kostka OLAP - struktura danych, która pozwala na efektywną analizę. Przechowuje ona dane w sposób przypominający wielowymiarowe arkusze kalkulacyjne a nie relacyjną bazę danych. 
+Można ją również zdefiniować jako zdolność manipulowania i analizowania danych z różnych punktów widzenia. Rozmieszczenie danych w kostkach pokonuje ograniczenia relacyjnych baz danych. 
